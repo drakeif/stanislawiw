@@ -1,0 +1,49 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@100;300;400&display=swap');
+// COLOR
+@import 'color';
+// CORRECT STYLE
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: $text;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1170px;
+    min-width: 320px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 15px;
+}
+// MAIN STYLE
+@import 'header';
+@import 'intro';
+@import 'city';
+@import 'places';
+@import 'works';
+@import 'kaskad';
+@import 'mall';
+@import 'street';
+@import 'footer';

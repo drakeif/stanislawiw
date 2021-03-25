@@ -1,0 +1,78 @@
+.works {
+    padding: 75px 0;
+    &__title {
+        width: 700px;
+        font-size: 30px;
+        margin-bottom: 50px; 
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        justify-content: space-between;
+        
+    }
+    &__element {
+        position: relative;
+        width: 350px;
+        height: 375px;
+        box-shadow: 0 15px 20px 1px rgba($text, .2);
+        overflow: hidden;
+        transition: .5s ease;
+
+        padding: 0 40px 40px 40px;
+        display: flex;
+        align-items: flex-end;
+        span {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 150px;
+            font-weight: 700;
+            position: absolute;
+            top: -90px;
+            left: -35px;
+        }
+        &:hover {
+            box-shadow: 0 15px 30px 3px rgba($accent, .4);
+        }
+        &:hover {
+            background: $accent;
+            color: $white;
+        }
+        &:hover a::after {
+            background: $white;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        h3 {
+            font-size: 22px;
+            flex: 1 0 auto;
+        }
+        p {
+            font-size: 14px;
+            flex: 1 0 auto;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 400;
+            position: relative;
+            &::after {
+                display: block;
+                content: '';
+                position: absolute;
+                margin-top: 5px;
+                background: $text;
+                width: 50%;
+                height: 1px;
+
+                transition: .3s ease;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
