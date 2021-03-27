@@ -38,8 +38,11 @@
                         margin-bottom: 0;
                     }
                 }
+                @include media(sm) {
+                    width: 450px;
+                }
                 @include media(xs) {
-                    max-width: 450px;
+                    width: 400px;
                 }
             }
         }

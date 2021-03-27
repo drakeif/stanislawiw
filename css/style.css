@@ -448,9 +448,12 @@ img {
             margin-bottom: 10px; }
             .city__inner_about p:last-child {
               margin-bottom: 0; } }
+        @media only screen and (max-width: 768px) {
+          .city__inner_about p {
+            width: 450px; } }
         @media only screen and (max-width: 500px) {
           .city__inner_about p {
-            max-width: 450px; } }
+            width: 400px; } }
     .city__inner_stat {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
