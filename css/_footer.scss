@@ -33,11 +33,12 @@
         grid-template-columns: minmax(min-content, 370px) repeat(4, minmax(min-content, 200px));
         @include media(sm) {
             padding: 50px 0;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 40px;
         }
-        @include media(sm) {
+        @include media(xs) {
             padding: 25px 0;
             grid-template-columns: 1fr;
-            row-gap: 40px;
         }
     }
     &__block {
@@ -66,4 +67,12 @@
             }
         }
     }
+}
+.fb--logo {
+    @include media(sm) {
+        grid-column: span 4;
+    }
+    @include media(xs) {
+        grid-column: span 1;
+    }  
 }

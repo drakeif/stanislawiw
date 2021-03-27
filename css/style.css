@@ -1037,12 +1037,13 @@ img {
     grid-template-columns: minmax(min-content, 370px) repeat(4, minmax(min-content, 200px)); }
     @media only screen and (max-width: 768px) {
       .footer__second {
-        padding: 50px 0; } }
-    @media only screen and (max-width: 768px) {
+        padding: 50px 0;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 40px; } }
+    @media only screen and (max-width: 500px) {
       .footer__second {
         padding: 25px 0;
-        grid-template-columns: 1fr;
-        row-gap: 40px; } }
+        grid-template-columns: 1fr; } }
   .footer__block h3 {
     font-size: 25px;
     font-weight: 300;
@@ -1061,5 +1062,12 @@ img {
       margin-bottom: 15px; }
       .footer__block ul li:last-child {
         margin-bottom: 0; }
+
+@media only screen and (max-width: 768px) {
+  .fb--logo {
+    grid-column: span 4; } }
+@media only screen and (max-width: 500px) {
+  .fb--logo {
+    grid-column: span 1; } }
 
 /*# sourceMappingURL=style.css.map */
