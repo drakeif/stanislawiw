@@ -1,22 +1,45 @@
 .city {
     padding: 75px 0;
+    @include media(sm) {
+        padding: 50px 0;
+    }
+    @include media(xs) {
+        padding: 25px 0;
+    }
     &__inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        row-gap: 30px; 
+        row-gap: 30px;
+        @include media(md) {
+            justify-content: center;
+        }
         &_about {
+            max-width: 100%;
             h2 {
                 width: 300px;
                 font-size: 30px;
-                margin-bottom: 50px; 
+                margin-bottom: 50px;
+                @include media(sm) {
+                    font-size: 26px;
+                    margin-bottom: 25px;
+                }
             }
             p {
                 width: 550px;
                 margin-bottom: 25px;
                 &:last-child {
                     margin-bottom: 0;
+                }
+                @include media(sm) {
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                @include media(xs) {
+                    max-width: 450px;
                 }
             }
         }

@@ -1,16 +1,31 @@
 .street {
     padding: 75px 0;
+    @include media(sm) {
+        padding: 50px 0;
+    }
+    @include media(xs) {
+        padding: 25px 0;
+    }
     &__inner {
         display: grid;
         grid-template-columns: repeat(2, 540px);
         grid-template-rows: repeat(3, auto);
         justify-content: space-between;
         row-gap: 100px;
+        @include media(lg) {
+            grid-template-columns: repeat(1, 440px);
+            justify-content: center;
+            row-gap: 25px;
+        }
     }
     &__block {
         position: relative;
         width: 540px;
         height: 330px;
+        @include media(lg) {
+            width: 440px;
+            height: 230px;
+        }
     }
     &__content {
         height: 100%;
@@ -18,10 +33,18 @@
             font-size: 25px;
             font-weight: 500;
             margin-bottom: 30px;
+            @include media(xs) {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
         }
         p {
             line-height: 2;
             margin-bottom: 15px;
+            @include media(xs) {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
         }
         a {
             display: inline-block;
@@ -37,6 +60,9 @@
                 outline: 1px solid $text;
                 color: $text;
                 background: none;
+            }
+            @include media(xs) {
+                width: 100%;
             }
         }
         img {
@@ -55,6 +81,11 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             font-weight: 500;
+            @include media(lg) {
+                padding: 10px 30px;
+                top: 205px;
+                font-size: 16px;
+            }
         }
     }
     &--i {
@@ -66,10 +97,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include media(lg) {
+            width: 75%;
+        }
        
     }
     &--sec_4 {
         grid-row: 2/3;
-        
+        @include media(lg) {
+            grid-row: 4/5;
+        }
     }
 }

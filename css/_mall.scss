@@ -1,15 +1,30 @@
 .mall {
     padding: 75px 0;
     background: $gray;
+    @include media(sm) {
+        padding: 50px 0;
+    }
+    @include media(xs) {
+        padding: 25px 0;
+    }
     &__title {
         width: 410px;
         font-size: 30px;
         margin-bottom: 50px;
+        @include media(sm) {
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
     }
     &__inner {
         display: grid;
         grid-template-columns: repeat(3, 350px);
         justify-content: space-between;
+        @include media(lg) {
+            grid-template-columns: repeat(1, 350px);
+            justify-content: center;
+            row-gap: 40px;
+        }
     }
     &__block {
         display: grid;
