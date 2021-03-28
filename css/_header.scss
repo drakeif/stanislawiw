@@ -1,5 +1,6 @@
 .header {
     padding: 40px 0;
+    z-index: 999;
     @include media(sm) {
         padding: 20px 0;
     }
