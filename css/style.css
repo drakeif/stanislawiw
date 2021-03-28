@@ -1046,7 +1046,6 @@ img {
       position: absolute;
       top: 300px;
       left: 175px;
-      z-index: 999;
       font-family: 'Montserrat', sans-serif;
       font-size: 18px;
       font-weight: 500; }
@@ -1070,9 +1069,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    @media only screen and (max-width: 1200px) {
-      .street--describe {
-        width: 75%; } }
   .street--sec_4 {
     grid-row: 2/3; }
     @media only screen and (max-width: 1200px) {

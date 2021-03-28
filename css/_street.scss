@@ -77,7 +77,6 @@
             position: absolute;
             top: 300px;
             left: 175px;
-            z-index: 999;
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             font-weight: 500;
@@ -97,9 +96,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        @include media(lg) {
-            width: 75%;
-        }
        
     }
     &--sec_4 {
