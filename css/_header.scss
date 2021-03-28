@@ -1,6 +1,11 @@
 .header {
     padding: 40px 0;
     z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: $white;
     @include media(sm) {
         padding: 20px 0;
     }
