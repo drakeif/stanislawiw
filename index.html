@@ -7,6 +7,7 @@
     <title>Stanislawiw</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <!-- HEADER -->
@@ -15,7 +16,7 @@
             <nav class="header__nav">
                 <a href="#!" class="header__logo">Stanislawiw</a>
 
-                <ul class="header__block">
+                <ul class="header__block header--js">
                     <li class="header__list"><a class="header__link" href="#!">About</a></li>
                     <li class="header__list"><a class="header__link" href="#!">Appartments</a></li>
                     <li class="header__list"><a class="header__link" href="#!">How It Works</a></li>
@@ -75,7 +76,7 @@
         </div>
     </div>
     <!-- ABOUT CITY -->
-    <section class="city">
+    <section class="city" id="point">
         <div class="container">
             <div class="city__inner">
                 <div class="city__inner_about">
@@ -447,5 +448,7 @@
     </footer>
     
     <script src="js/all.min.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -53,16 +53,20 @@
         position: relative;
         width: 40px;
         height: 20px;
+        cursor: pointer;
         span {
             position: absolute;
             background: $text;
             width: 100%;
             height: 1px;
             transition: .1s linear;
-            &:first-child {
+            &:nth-child(1) {
+                top: 0;
+            }
+            &:nth-child(2) {
                 top: 50%;
             }
-            &:last-child {
+            &:nth-child(3) {
                 top: 100%;
             }
         }
@@ -71,6 +75,61 @@
         }
         &:hover span {
             background: $accent;
+        }
+    }
+}
+.header.active {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+    box-shadow: 0 3px 3px rgba($text, .5);
+    animation: fromUP .5s ease;
+}
+.header__nav.active .header--js {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    background: $white;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    animation: fromLeft .5s ease;
+}
+@keyframes fromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes fromUP {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.header__burger.transform {
+    span {
+        &:nth-child(1) {
+            top: 50%;
+            transform: rotate(-45deg);
+            
+        }
+        &:nth-child(2) {
+            top: 50%;
+            opacity: 0;
+        }
+        &:nth-child(3) {
+            top: 50%;
+            transform: rotate(45deg);
         }
     }
 }
