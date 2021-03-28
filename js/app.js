@@ -28,6 +28,6 @@ const clickClose = document.querySelectorAll('.header--js');
 for(let i = 0; i < clickClose.length; i++) {
   clickClose[i].addEventListener('click', () =>{
     menu.classList.remove('active');
-    burger.classList.remove('active');
+    burger.classList.remove('transform');
   })
 }
