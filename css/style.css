@@ -35,6 +35,28 @@ img {
   margin: 0 auto;
   padding: 0 15px; }
 
+.language {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px; }
+  .language__list {
+    width: 30px;
+    height: 30px; }
+  .language__btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none; }
+    .language__btn img {
+      width: 100%;
+      height: auto; }
+
 .header {
   padding: 40px 0;
   z-index: 999;

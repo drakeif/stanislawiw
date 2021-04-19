@@ -40,6 +40,27 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+// LANG
+.language {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    &__list {
+        width: 30px;
+        height: 30px;
+    }
+    &__btn {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: none;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
 // MAIN STYLE
 @import 'header';
 @import 'intro';
